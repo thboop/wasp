@@ -18,6 +18,7 @@ genAuth wasp = case maybeAuth of
                    -- Auth routes
                  , genAuthRoutesIndex
                  , genLoginRoute auth
+                 -- TODO(matija): generate route for signup
                  , genMeRoute auth
                  ]
     Nothing   -> []

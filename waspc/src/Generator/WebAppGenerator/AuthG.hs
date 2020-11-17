@@ -12,6 +12,7 @@ genAuth :: Wasp -> [FileDraft]
 genAuth wasp = case maybeAuth of
     Just _    -> [ genLogin
                  , genLogout
+                 -- TODO(matija): generate signUp function
                  , genUseAuth
                  ]
     Nothing   -> []
