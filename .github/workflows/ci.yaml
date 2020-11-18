@@ -57,7 +57,7 @@ jobs:
         if: runner.os == 'macOS'
 
       - name: Set up environment
-        uses: thboop/setup-haskell@main
+        uses: actions/setup-haskell@v1
         with:
           ghc-version: latest
           enable-stack: true
